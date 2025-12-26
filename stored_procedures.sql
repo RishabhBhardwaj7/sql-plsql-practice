@@ -1,6 +1,7 @@
 -- Stored Procedures Practice
 
 -- 1. Simple Procedure: Increase Employee Salary
+
 CREATE OR REPLACE PROCEDURE increase_salary (
     p_employee_id IN employees.employee_id%TYPE,
     p_increment IN NUMBER
@@ -16,6 +17,7 @@ END;
 /
 
 -- 2. Procedure with Parameters: Add New Employee
+    
 CREATE OR REPLACE PROCEDURE add_employee (
     p_first_name IN VARCHAR2,
     p_last_name IN VARCHAR2,
@@ -34,6 +36,7 @@ END;
 /
 
 -- 3. Dynamic SQL Example
+    
 CREATE OR REPLACE PROCEDURE get_employee_by_column (
     p_column_name IN VARCHAR2,
     p_value IN VARCHAR2
